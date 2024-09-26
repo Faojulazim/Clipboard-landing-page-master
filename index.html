@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Clipboard landing page</title>
+  </head>
+  <body class="font-bai">
+    <picture class="w-full absolute">
+      <source
+        media="(min-width: 768px)"
+        srcset="images/bg-header-desktop.png"
+      />
+      <img class="w-full" src="images/bg-header-mobile.png" alt="" />
+    </picture>
+    <section
+      class="relative min-h-[100dvh] flex flex-col justify-center items-center"
+    >
+      <nav class="px-5 py-[6.5rem]">
+        <img class="w-44 mx-auto" src="images/logo.svg" alt="" />
+        <div class="mx-auto text-center">
+          <h1
+            class="text-[40px] font-bold leading-[44px] text-Dark-Grayish-Blue max-w-[400px] mx-auto pt-14 lg:max-w-none"
+          >
+            A history of everything you copy
+          </h1>
+          <p
+            class="mx-auto font-normal text-Grayish-Blue max-w-[345px] pt-4 text-[18px] sm:max-w-[450px] md:max-w-[650px]"
+          >
+            Clipboard allows you to track and organize everything you copy.
+            Instantly access your clipboard on all your devices.
+          </p>
+        </div>
+        <div class="flex flex-col items-center justify-center md:flex-row">
+          <button
+            class="cursor-pointer text-[18px] bg-Strong-Cyan py-3 px-16 rounded-full text-[white] shadow-btnScyan mt-10 hover:opacity-[70%]"
+          >
+            Download for iOS
+          </button>
+          <button
+            class="cursor-pointer text-[18px] bg-Light-Blue py-3 px-16 rounded-full text-[white] shadow-btnSbblue mt-6 md:mt-10 md:ml-5 hover:opacity-[70%]"
+          >
+            Download for Mac
+          </button>
+        </div>
+      </nav>
+    </section>
+    <section>
+      <div class="px-6 md:px-20">
+        <h1
+          class="text-center text-[36px] font-bold leading-[38px] text-Dark-Grayish-Blue max-w-[400px] mx-auto pt-14 lg:max-w-none"
+        >
+          Keep track of your snippets
+        </h1>
+        <p
+          class="text-center text-[18px] pt-6 mx-auto font-normal text-Grayish-Blue max-w-[340px] sm:max-w-[500px] md:max-w-[700px]"
+        >
+          Clipboard instantly stores any item you copy in the cloud, meaning you
+          can access your snippets immediately on all your devices. Our Mac and
+          iOS apps will help you organize everything.
+        </p>
+      </div>
+      <div
+        class="lg:flex lg:justify-between lg:items-center lg:ml-[-200px] xl:ml-[-230px] lg:overflow-hidden lg:pt-20"
+      >
+        <img
+          class="w-[85%] mx-auto pt-[4.5rem] sm:w-[80%] md:w-[50%] lg:w-[50%] lg:pt-0"
+          src="images/image-computer.png"
+          alt=""
+        />
+        <div class="pt-14 lg:w-[35%] lg:pt-0">
+          <div class="mb-11">
+            <h1
+              class="text-[26px] font-bold text-Dark-Grayish-Blue text-center md:text-[30px] lg:text-start"
+            >
+              Quick Search
+            </h1>
+            <p
+              class="text-[18px] text-Grayish-Blue text-center pt-2 max-w-[340px] mx-auto md:max-w-[400px] lg:text-start lg:mx-0"
+            >
+              Easily search your snippets by content, category, web address,
+              application, and more.
+            </p>
+          </div>
+          <div class="mb-11">
+            <h1
+              class="text-[26px] font-bold text-Dark-Grayish-Blue text-center md:text-[30px] lg:text-start"
+            >
+              iCloud Sync
+            </h1>
+            <p
+              class="text-[18px] text-Grayish-Blue text-center pt-2 max-w-[340px] mx-auto md:max-w-[400px] lg:text-start lg:mx-0"
+            >
+              Instantly saves and syncs snippets across all your devices.
+            </p>
+          </div>
+          <div class="mb-11">
+            <h1
+              class="text-[26px] font-bold text-Dark-Grayish-Blue text-center md:text-[28px] lg:text-start"
+            >
+              Complete History
+            </h1>
+            <p
+              class="text-[18px] text-Grayish-Blue text-center pt-2 max-w-[340px] mx-auto md:max-w-[380px] lg:text-start lg:mx-0"
+            >
+              Retrieve any snippets from the first moment you started using the
+              app.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h1
+          class="text-center text-[36px] font-bold leading-[38px] text-Dark-Grayish-Blue max-w-[400px] mx-auto pt-14 lg:max-w-none"
+        >
+          Access Clipboard anywhere
+        </h1>
+        <p
+          class="text-center text-[18px] pt-6 mx-auto font-normal text-Grayish-Blue max-w-[340px] sm:max-w-[500px] lg:max-w-[670px]"
+        >
+          Whether you’re on the go, or at your computer, you can access all your
+          Clipboard snippets in a few simple clicks.
+        </p>
+      </div>
+      <img
+        class="mx-auto pt-16 w-[92%] sm:w-[80%] lg:w-[50%]"
+        src="images/image-devices.png"
+        alt=""
+      />
+    </section>
+    <section>
+      <div class="pt-[5.5rem] pb-[8rem] md:pb-[10rem]">
+        <div>
+          <h1
+            class="text-center text-[36px] font-bold leading-[38px] text-Dark-Grayish-Blue max-w-[400px] mx-auto lg:max-w-none"
+          >
+            Supercharge your workflow
+          </h1>
+          <p
+            class="text-center text-[18px] pt-6 mx-auto font-normal text-Grayish-Blue max-w-[340px] lg:max-w-none"
+          >
+            We’ve got the tools to boost your productivity.
+          </p>
+        </div>
+        <div class="lg:flex lg:justify-center lg:pt-6">
+          <div class="pt-16 px-6">
+            <img
+              class="mx-auto w-12 pb-10 sm:w-16"
+              src="images/icon-blacklist.svg"
+              alt=""
+            />
+            <h1
+              class="text-[26px] font-bold text-Dark-Grayish-Blue text-center md:text-[28px]"
+            >
+              Create blacklists
+            </h1>
+            <p
+              class="text-[18px] text-Grayish-Blue text-center pt-4 max-w-[370px] mx-auto md:pt-5"
+            >
+              Ensure sensitive information never makes its way to your clipboard
+              by excluding certain sources.
+            </p>
+          </div>
+          <div class="pt-16 px-6">
+            <img
+              class="mx-auto w-12 pb-10 sm:w-16"
+              src="images/icon-text.svg"
+              alt=""
+            />
+            <h1
+              class="text-[26px] font-bold text-Dark-Grayish-Blue text-center md:text-[28px]"
+            >
+              Plain text snippets
+            </h1>
+            <p
+              class="text-[18px] text-Grayish-Blue text-center pt-4 max-w-[400px] mx-auto md:pt-5"
+            >
+              Remove unwanted formatting from copied text for a consistent look.
+            </p>
+          </div>
+          <div class="pt-16 px-6">
+            <img
+              class="mx-auto w-12 pb-10 sm:w-16"
+              src="images/icon-preview.svg"
+              alt=""
+            />
+            <h1
+              class="text-[26px] font-bold text-Dark-Grayish-Blue text-center md:text-[28px]"
+            >
+              Sneak preview
+            </h1>
+            <p
+              class="text-[18px] text-Grayish-Blue text-center pt-4 max-w-[390px] mx-auto md:pt-5"
+            >
+              Quick preview of all snippets on your Clipboard for easy access.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col px-6 items-center justify-center pt-32 lg:flex-row lg:items-center lg:gap-x-[3.3rem] xl:gap-x-24"
+        >
+          <img class="cursor-pointer" src="images/logo-google.png" alt="" />
+          <img
+            class="pt-16 lg:pt-0 cursor-pointer"
+            src="images/logo-ibm.png"
+            alt=""
+          />
+          <img
+            class="pt-16 lg:pt-0 cursor-pointer"
+            src="images/logo-microsoft.png"
+            alt=""
+          />
+          <img
+            class="pt-16 lg:pt-0 cursor-pointer"
+            src="images/logo-hp.png"
+            alt=""
+          />
+          <img
+            class="pt-16 lg:pt-0 pb-10 lg:pb-0 cursor-pointer"
+            src="images/logo-vector-graphics.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="px-6">
+        <h1
+          class="text-center text-[36px] font-bold leading-[38px] text-Dark-Grayish-Blue max-w-[400px] mx-auto lg:max-w-none"
+        >
+          Clipboard for iOS and Mac OS
+        </h1>
+        <p
+          class="text-center text-[18px] pt-6 mx-auto font-normal text-Grayish-Blue max-w-[345px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[700px]"
+        >
+          Available for free on the App Store. Download for Mac or iOS, sync
+          with iCloud and you’re ready to start adding to your clipboard.
+        </p>
+      </div>
+      <div class="flex flex-col items-center justify-center pb-36 md:flex-row">
+        <button
+          class="cursor-pointer text-[18px] bg-Strong-Cyan py-3 px-16 rounded-full text-[white] shadow-btnScyan mt-10 hover:opacity-[70%]"
+        >
+          Download for iOS
+        </button>
+        <button
+          class="cursor-pointer text-[18px] bg-Light-Blue py-3 px-16 rounded-full text-[white] shadow-btnSbblue mt-6 md:mt-10 md:ml-5 hover:opacity-[70%]"
+        >
+          Download for Mac
+        </button>
+      </div>
+    </section>
+    <section class="bg-footer">
+      <div
+        class="flex flex-col justify-center items-center py-14 lg:flex-row lg:justify-between lg:items-center lg:px-14 xl:px-20"
+      >
+        <div class="text-center lg:flex lg:items-center">
+          <div>
+            <img
+              class="cursor-pointer w-14 mx-auto pb-10 lg:pb-0 lg:mx-0 lg:w-[4.5rem]"
+              src="images/logo.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="text-center text-[18px] text-Dark-Grayish-Blue font-medium lg:text-start lg:flex"
+          >
+            <div class="lg:pl-20 xl:pl-32 2xl:pl-56">
+              <ul>
+                <li
+                  class="cursor-pointer text-[#4C545C] hover:text-Strong-Cyan"
+                >
+                  FAQs
+                </li>
+                <li
+                  class="pt-4 lg:pt-0 cursor-pointer text-[#4C545C] hover:text-Strong-Cyan"
+                >
+                  Contact Us
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li
+                  class="pt-4 lg:pt-0 lg:pl-20 xl:pl-24 cursor-pointer text-[#4C545C] hover:text-Strong-Cyan"
+                >
+                  Privacy Policy
+                </li>
+                <li
+                  class="pt-4 lg:pt-0 lg:pl-20 xl:pl-24 cursor-pointer text-[#4C545C] hover:text-Strong-Cyan"
+                >
+                  Press Kit
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li
+                  class="pt-4 lg:pt-0 lg:pl-20 xl:pl-24 cursor-pointer text-[#4C545C] hover:text-Strong-Cyan"
+                >
+                  Install Guide
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center pt-12 lg:pt-0">
+          <i
+            class="fa-brands fa-square-facebook text-[#4C545C] text-Strong-Cyan text-[1.9rem] hover:text-Strong-Cyan"
+          ></i>
+          <i
+            class="fa-brands fa-twitter ml-10 lg:ml-6 cursor-pointer text-[#4C545C] text-Strong-Cyan text-[1.9rem] hover:text-Strong-Cyan"
+          ></i>
+          <i
+            class="fa-brands fa-instagram ml-10 lg:ml-6 cursor-pointer text-[#4C545C] text-Strong-Cyan text-[1.9rem] hover:text-Strong-Cyan"
+          ></i>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
